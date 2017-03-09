@@ -161,14 +161,15 @@ main {
 	font-size: 2em
 }
 
+#grid-projects {
+	flex-flow: column nowrap;
+}
 
 .grid-item-projects {
 	display: flex;
 	width: 30%;
 	align-items: center;
-	justify-content: center;
-	
-	
+	justify-content: center;	
 }
 
 #grid-item-ap {
@@ -177,10 +178,31 @@ main {
 	
 }
 
-a {
-	
+
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 5%;
+}
+li a {
+  color: hsl(60, 1%, 67%);
+  font-size: 1.5em; 
+  text-decoration: none;
+}
 
 
 
