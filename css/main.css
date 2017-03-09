@@ -135,14 +135,29 @@ main {
 
 .grid-item {
   display: flex;
-  width: 33%;
-  height: 100px;
+  width: 30%;
+  height: 200px;
   align-items: center;
   justify-content: center;
+	border: #0099ff solid 10px;
+	border-radius: 50%
 }
 
+a {
+	text-decoration: none;
+	color: hsl(60, 6%, 17%);
+	font-size: 2em
+}
 
+#grid-item-ap {
+	background-image: url("/images/ap-icon.png");
+	
+	
+}
 
+a {
+	
+}
 
 
 
