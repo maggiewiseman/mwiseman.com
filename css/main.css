@@ -127,26 +127,43 @@ main {
   
 }
 
+.section-header {
+	font-size: 1.3em;
+	margin-top: 2em;
+}
+
 .grid {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.grid-item {
+.grid-item-courses {
   display: flex;
   width: 30%;
   height: 200px;
   align-items: center;
   justify-content: center;
-	border: #0099ff solid 10px;
-	border-radius: 50%
+	text-align: center;
+	background-color: hsl(60, 1%, 67%);
+	border: none;
+	border-radius: 10%
 }
 
-a {
+.grid-item-courses a {
 	text-decoration: none;
-	color: hsl(60, 6%, 17%);
+	color: #fff;
 	font-size: 2em
+}
+
+
+.grid-item-projects {
+	display: flex;
+	width: 30%;
+	align-items: center;
+	justify-content: center;
+	
+	
 }
 
 #grid-item-ap {
