@@ -98,7 +98,12 @@ body {
   background-color: #fefed8; /* hsl: 60, 93% 92% */
   color: hsl(60, 6%, 17%);
   font-family: 'Rubik', sans-serif;
-  display: flex;
+  display: -webkit-box;  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;  /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+  
   justify-content: center;
 }
 
