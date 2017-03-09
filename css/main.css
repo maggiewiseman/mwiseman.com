@@ -98,18 +98,43 @@ body {
   background-color: #fefed8; /* hsl: 60, 93% 92% */
   color: hsl(60, 6%, 17%);
   font-family: 'Rubik', sans-serif;
-  display: -webkit-box;  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+	display: -webkit-box;  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
   display: -moz-box;      /* OLD: Firefox (buggy) */
   display: -ms-flexbox;  /* MID: IE 10 */
   display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
   display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
-  
-  justify-content: center;
+  flex-flow: column nowrap;
 }
 
+p {
+	color: hsl(60, 1%, 37%);
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: hsla(240, 100%, 12%, 1);
+
+}
+
+nav li a {
+	text-decoration: none;
+	color: white; 
+	font-size: 0.8em;
+}
+
+#logo {
+	color: hsla(126, 80%, 27%, 1);
+	font-size: 3em;
+}
 .wrapper {
-  width: 90%;
-  display: flex;
+  width: 80%;
+  	display: -webkit-box;  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;  /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap
@@ -150,9 +175,9 @@ main {
   align-items: center;
   justify-content: center;
 	text-align: center;
-	background-color: hsl(60, 1%, 67%);
+	background-color:  hsla(240, 100%, 12%, 1);/*hsl(60, 1%, 67%);*/
 	border: none;
-	border-radius: 10%
+	border-radius: 10px;
 }
 
 #section-grid-courses .grid-item-btn a {
@@ -181,6 +206,13 @@ main {
 	color: white;
 	width: 75px;
 	margin: 0 10px;
+}
+
+.div-grid-item-info {
+	margin-left: 10px;
+}
+.grid-item-header {
+	
 }
 
 footer {
