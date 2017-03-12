@@ -129,6 +129,10 @@ nav li a {
 	font-size: 0.8em;
 }
 
+nav li a:hover {
+	color: #3498db;
+}
+
 nav li {
 	border-right: white dotted 2px;
 }
@@ -185,7 +189,6 @@ main {
 }
 
 .grid-item-btn,
-.grid-item-project-btn,
 .email-btn {
   display: flex;
   width: 30%;
@@ -201,21 +204,34 @@ main {
 	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
 }
 
-.btn-hover {
-	background-color: white;
 
-}
-
-
-
-#section-grid-courses .grid-item-btn a {
+#section-grid-courses .grid-item-btn {
 	text-decoration: none;
 	color: #fff;
 	font-size: 2em;
 }
 
+
+#section-grid-courses .grid-item-btn:hover,
+.email-btn:hover {
+	background-color: #fff;
+	color: #3498db;
+}
+
 #section-grid-projects {
 	flex-flow: column nowrap;
+}
+
+#section-grid-projects .grid-item-btn {
+	text-decoration: none;
+	color: white;
+	width: 3em;
+	padding: 0.5em 2em
+}
+
+#section-grid-projects .grid-item-btn:hover {
+	background-color: #fff;
+	color: #3498db;
 }
 
 .div-grid-item {
@@ -223,21 +239,6 @@ main {
 	width: 100%;
 	align-items: center;
 	padding: 5px;
-}
-
-#grid-item-ap {
-	background-image: url("/images/ap-icon.png");	
-}
-
-.grid-item-project-btn {
-	width: 100px;
-}
-
-.grid-item-project-btn a {
-	text-decoration: none;
-	color: white;
-	width: 75px;
-	margin: 0 10px;
 }
 
 .div-grid-item-info {
@@ -257,10 +258,6 @@ main {
 	width: 150px;
 	margin-top: 10px;
 	
-}
-
-.btn-hover-a a {
-	color:#3498db;
 }
 
 footer {
