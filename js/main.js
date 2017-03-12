@@ -6,8 +6,11 @@
 
 
 $(document).on('mouseenter', '.grid-item-btn, .grid-item-project-btn, .email-btn', function(e) {
-	console.log(e);
+	var event = e;
+	console.log(event);
 	$(e.target).toggleClass('btn-hover');
+	
+	$(e.target.childNodes[1].id).toggleClass('btn-hover-a');
 })
 
 $(document).on('mouseleave', '.grid-item-btn, .grid-item-project-btn, .email-btn', function(e) {

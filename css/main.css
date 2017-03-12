@@ -203,13 +203,15 @@ main {
 
 .btn-hover {
 	background-color: white;
-	color:#3498db;
+
 }
+
+
 
 #section-grid-courses .grid-item-btn a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 2em
+	font-size: 2em;
 }
 
 #section-grid-projects {
@@ -255,6 +257,10 @@ main {
 	width: 150px;
 	margin-top: 10px;
 	
+}
+
+.btn-hover-a a {
+	color:#3498db;
 }
 
 footer {
