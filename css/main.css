@@ -196,7 +196,9 @@ main {
 .section-grid {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  flex-flow: row wrap;
+	justify-content: center;
+
 }
 
 .grid-item-btn,
@@ -205,6 +207,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		margin: 1%;
 		background-color: #3498db;
 		border: 4px solid #3498db;
 		-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
@@ -217,7 +220,7 @@ main {
 		text-decoration: none;
 		color: #fff;
 		font-size: 1.5em;
-		width: 30%;
+		width: 100px;
 	}
 
 
@@ -416,10 +419,12 @@ footer li {
 	}
 	
 	#section-grid-courses .grid-item-btn {
-		text-decoration: none;
-		color: #fff;
 		font-size: 2em;
+		width: 30%;
+		flex-flow: row nowrap;
 	}
+	
+
 
 
 	
