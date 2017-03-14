@@ -112,14 +112,27 @@ h1 {
 	font-size: 1.3em;
 }
 
+p, li {
+	color: hsl(60, 1%, 27%);
+	line-height: 1.5;
+}
+
 p {
-	color: hsl(60, 1%, 37%);
+	font-family: 'Georgia';
 }
 
 li a {
   color: #3498db;
   font-size: 1.5em; 
   text-decoration: none;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+.span-sm-txt {
+	font-size: .7em;
 }
 
 /**** NAV BAR STYLES ****/
@@ -290,6 +303,17 @@ footer li {
   display: inline;
   padding: 0 5%;
 }
+
+
+/**** ABOUT PAGE STYLES ****/
+.about a {
+	font-size: 1em;
+	text-decoration: none;
+	color: #3498db;
+}
+
+.about nav li a {
+	color: white;
 }
 
 
