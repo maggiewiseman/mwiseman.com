@@ -307,19 +307,17 @@ footer ul {
 
 footer li {
   display: inline;
-  padding: 0 20px;
+  padding: 0 5%;
+	font-size: 1em;
 }
 
 
-/**** ABOUT PAGE STYLES ****/
-.about a {
+/**** ABOUT PAGE STsYLES ****/
+.about p a,
+.about main li a{
 	font-size: 1em;
 	text-decoration: none;
 	color: #3498db;
-}
-
-.about nav li a {
-	color: white;
 }
 
 .about main header {
@@ -328,8 +326,12 @@ footer li {
 
 .div-img-resp {
 	float: left;
-	margin: 2%;
+	margin: 2% 5% 2% 0%;
 	border: 4px solid #2c3e50;;
+}
+
+.about section {
+	width: 100%;
 }
 
 
