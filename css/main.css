@@ -94,255 +94,158 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- /***** GLOBAL STYLES ****/
+/* COLORS
+blue: #004a80
+pink: #fdb8f8
+dark-gray: #595a5b
+light-gray: #acacac
+
+FONTS:
+font-family: 'Clicker Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'PT Sans', sans-serif;
+
+*/
 body {
-	background: #f3f3f3;
-	background-image: url(/images/buttonbg20151103.png);
-  background-position: left top;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
- 
-  color: hsl(60, 6%, 17%);
-  font-family: 'Lato', sans-serif;
-	display: -webkit-box;  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-  display: -moz-box;      /* OLD: Firefox (buggy) */
-  display: -ms-flexbox;  /* MID: IE 10 */
-  display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
-  display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
-  flex-flow: column nowrap;
-	font-size: 12px;
+    color: #595a5b;
+    background-color: #004a80;
+    text-align: center;
 }
 
-h1 {
-	font-size: 1.3em;
+a {
+    text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-	color: #2c3e50;
+section {
+    width: 95%;
 }
 
-p, li {
-	color: hsl(60, 1%, 27%);
-	line-height: 1.5;
-}
 
-li a {
-  color: #3498db;
-  font-size: 1.5em; 
-  text-decoration: none;
-}
-
-blockquote {
-	font-style: italic;
-	color: #3498db;
-}
-
-.span-sm-txt {
-	font-size: .7em;
-}
-
-/**** NAV BAR STYLES ****/
+/* ========== NAV =========== */
 nav {
-	width: 100%;
-	background-color: #2c3e50;
-	position: relative;
+    width: 100%;
+    height: 50px;
+    color: #004a80;
+    background-color: #fff;
+    text-align: left; r
+
+
 }
 
 nav ul {
-	width: 100%;
-  list-style-type:none;
-  
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: inline;
 }
 
-nav li a { 
-	color: white;
-	font-size: 1.2em;
-	padding: 10px 0 10px 10px;
+nav ul li {
+    display: inline;
+    position: relative;
+    padding: 0px 10px;
 }
 
-nav li a:hover {
-	color: #3498db;
+nav li a {
+    color: #004a80;
+    text-decoration: none;
+    font-size: 24px;
+
 }
 
-#nav-li-last {
-	border: none;
+nav ul li:hover {
+    background: #acacac;
 }
 
-#logo {
-	color: #3498db;
-	font-size: 3em;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-family: 'Lato', Garamond, serif;
-	
-	padding: none;
-}
-.wrapper {
-	background: white;
-  width: 60%;
-	margin: 3em auto;
-	padding: 3em;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap
+nav ul ul {
+    display: none;
 }
 
-header {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-	font-family: 'Lora';
-	font-weight: 700;
-	font-style: italic;
+nav ul li:hover ul {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 100%;
+    background: #fff;
 }
 
-main {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-flow: column nowrap;
-  
+nav ul ul li {
+    display: block
 }
 
-.section-mission span {
-	font-style: italic;
-	color: hsla(240, 100%, 12%, 1);
+#dl-link {
+    color: #acacac;
+    float: right;
+    border: 2px solid  #acacac;
+    margin: 4px 8px;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 24px;
+}
+#dl-link > i {
+    padding-right: 10px;
 }
 
-.section-header {
-	font-size: 1.3em;
-	margin-top: 2em;
-	border-top: gray 1px dashed;
+/* ========== HERO =========== */
+.name {
+    width: 500px;
+    height: auto;
+    display: inline-block;
 }
 
-.section-grid {
-  display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-	justify-content: center;
+.hero figure img {
+    width: 100%;
+    height: 100%;
 }
 
-.grid-item-btn,
-	.email-btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		margin: 1%;
-		background-color: #3498db;
-		border: 4px solid #3498db;
-		-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
-		-moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
-		box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
-	}
+.hero h1 {
+    display: inline-block;
+    font-family: 'Clicker Script', cursive;
+    color: #fdb8f8;
+    font-size: 75px;
 
-
-	#section-grid-courses .grid-item-btn {
-		text-decoration: none;
-		color: #fff;
-		font-size: 1.5em;
-		width: 100px;
-	}
-
-
-	#section-grid-courses .grid-item-btn:hover,
-	.email-btn:hover {
-		background-color: #fff;
-		color: #3498db;
-	}
-
-	#section-grid-projects {
-		flex-flow: column nowrap;
-	}
-
-	#section-grid-projects .grid-item-btn {
-		text-decoration: none;
-		color: white;
-		width: 3em;
-		padding: 0.5em 2em
-	}
-
-	#section-grid-projects .grid-item-btn:hover {
-		background-color: #fff;
-		color: #3498db;
-	}
-
-	.div-grid-item {
-		display: flex;
-		width: 100%;
-		align-items: center;
-		padding: 5px;
-	}
-
-	.div-grid-item-info {
-		margin-left: 10px;
-	}
-
-#section-head-contact {
-	width:auto;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
 }
 
-.email-btn {
-	color: white;
-	text-decoration: none;
-	width: 150px;
-	margin-top: 10px;
-	
+.hero h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 48px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.hero p {
+    display: none;
+    color: #fff;
 }
 
-footer ul {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
+.btn-group {
+    text-align: center;
 }
 
-footer li {
-  display: inline;
-  padding: 0 5%;
-	font-size: 1em;
+.btn-group a {
+    border: 2px solid #fdb8f8;
+    padding: 8px 16px;
+    color: #fdb8f8;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 5px;
+
 }
 
-
-/**** ABOUT PAGE STsYLES ****/
-.about p a,
-.about main li a{
-	font-size: 1em;
-	text-decoration: none;
-	color: #3498db;
+.btn-group a i {
+    padding-right: 10px;
 }
 
-.about main header {
-	justify-content: flex-start;
+.social {
+    margin: 20px;
 }
 
-.div-img-resp {
-	float: left;
-	margin: 2% 5% 2% 0%;
-	border: 4px solid #2c3e50;;
+.social i {
+    font-size: 40px;
+    color: #fdb8f8;
 }
-
-.about section {
-	width: 100%;
-}
-
-
-
 
 
 
@@ -430,61 +333,9 @@ footer li {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width: 510px) { 
-	body {
-		font-size: 16px;
-	}
-	
-	h1 {
-		font-size: 1.3em;
-  }
 
-}
-@media screen and (min-width: 893px) {
-	body {
-		font-size: 16px;
-	}
+@media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-	.grid-item-btn,
-	.email-btn {
-		height: 100px;
-	}
-
-	nav ul {
-		padding: 0;
-		text-align: center;
-	}
-	nav li {
-		border-right: white dotted 2px;
-		display: inline;
-		padding: 0 5%;
-		font-size: 0.8em;
-	}
-
-	#logo {
-		font-size:3em;
-		position: relative;
-		top: 0;
-		right: 0;
-	}
-
-	.wrapper {
-		max-width: 1100px;
-	}
-	h1 {
-		font-size: 2em;
-	}
-	
-	#section-grid-courses .grid-item-btn {
-		font-size: 2em;
-		width: 30%;
-		flex-flow: row nowrap;
-	}
-	
-
-
-
-	
 }
 
 @media print,
