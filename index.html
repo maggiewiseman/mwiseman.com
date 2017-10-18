@@ -62,61 +62,60 @@
             </div>
         </section>
         <section id="skills">
-                <header id="skills-header">
-                    <h2>Skills</h2>
-                </header>
-                <div class="skills-div">
-                    <div class="list-div">
-                        <ul>
-                            <li>HTML5</li>
-                            <li>Bootstrap</li>
-                            <li>CSS & SCSS</li>
-                        </ul>
-                        <ul>
-                            <li>Illustrator</li>
-                            <li>Photoshop</li>
-                        </ul>
-                        <ul>
-                            <li>Git & Github</li>
+            <header class="skills-header">
+                <h2>Skills</h2>
+            </header>
+            <div class="skills-div">
+                <div class="list-div">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>Bootstrap</li>
+                        <li>CSS & SCSS</li>
+                    </ul>
+                    <ul>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <ul>
+                        <li>Git & Github</li>
+                    </ul>
 
-                        </ul>
-
-                    </div>
-                    <div class="list-div">
-
-                        <ul>
-                            <li>jQuery</li>
-                            <li>Javascript</li>
-                            <li>Templating</li>
-                            <li>React & Redux</li>
-                            <li>Node & Express</li>
-                            <li>Mocha & Chai</li>
-                            <li>PosgreSQL</li>
-                            <li>Redis</li>
-                        </ul>
-                    </div>
-                    <a id="download-cv" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
                 </div>
-            </section>
+                <div class="list-div">
+
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Javascript</li>
+                        <li>Templating</li>
+                        <li>React & Redux</li>
+                        <li>Node & Express</li>
+                        <li>Mocha & Chai</li>
+                        <li>PosgreSQL</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <a id="download-cv" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
+            </div>
+        </section>
         <section id="projects">
-                <header class="projects-header" id="full">
-                    <h2>Fullstack Projects</h2>
-                </header>
-                <div class="projects-row">
-                    <div class="project">
-                        <header class="project-title">
-                            <h4>Online Lab Notebook</h4>
-                        </header>
-                        <figure class="thumbnail">
-                            <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank"><img src="./images/screenshots/cloudnb.png" alt="lab notebook screenshot" /></a>
-                        </figure>
-                        <p>Prototype for an application that allows high school teachers to manage student lab work with React and Redux on Node with PostgreSQL. </p>
-                        <div class="dl-btn-grp">
-                            <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank">Code</a>
-                            <a href="https://cloudnotebook.herokuapp.com/" target="_blank">Live</a>
-                        </div>
+            <header class="projects-header" id="full">
+                <h2>Fullstack Projects</h2>
+            </header>
+            <div class="projects-row">
+                <div class="project">
+                    <header class="project-title">
+                        <h4>Online Lab Notebook</h4>
+                    </header>
+                    <figure class="thumbnail">
+                        <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank"><img src="./images/screenshots/cloudnb.png" alt="lab notebook screenshot" /></a>
+                    </figure>
+                    <p>Prototype for an application that allows high school teachers to manage student lab work with React and Redux on Node with PostgreSQL. </p>
+                    <div class="dl-btn-grp">
+                        <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank">Code</a>
+                        <a href="https://cloudnotebook.herokuapp.com/" target="_blank">Live</a>
                     </div>
-                    <div class="project">
+                </div>
+                <div class="project">
                         <header class="project-title">
                             <h4>DogBook Social Network</h4>
                         </header>
@@ -129,9 +128,9 @@
                             <!--a href="https://eat-local-pledge.herokuapp.com/" target="_blank">Live</a -->
                         </div>
                     </div>
-                    <div class="project">
+                <div class="project">
                         <header class="project-title">
-                            <h4>Eat Local Pledige</h4>
+                            <h4>Eat Local Pledge</h4>
                         </header>
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/petition/blob/master/README.md" target="_blank"><img src="./images/screenshots/petition.png" alt="Eat Locak Pledge screenshot" /></a>
@@ -142,11 +141,11 @@
                             <a href="https://eat-local-pledge.herokuapp.com/" target="_blank">Live</a>
                         </div>
                     </div>
-                </div> <!-- end row -->
+            </div> <!-- end row -->
 
-                <header class="projects-header" id="front">
-                    <h2>Javascript Projects</h2>
-                </header>
+            <header class="projects-header" id="front">
+                <h2>Javascript Projects</h2>
+            </header>
                 <div class="projects-grid">
                     <div class="project">
                         <header class="project-title">
@@ -222,8 +221,14 @@
                         </figure>
                         <p>The goal here was to take a list of anchor tags in an html file and make them scroll across the top of the screen using only vanilla JavaScript. The second part of this project required getting the headlines from the Twitter API.</p>
                         <div class="dl-btn-grp">
-                            <a href="https://github.com/maggiewiseman/twitter-ticker" target="_blank">Code</a> (API version)
-                            <a href="https://maggie-wiseman-portfolio.herokuapp.com/ticker/" target="_blank">Live </a>(Non-API version)
+                            <div>
+                                <a href="https://github.com/maggiewiseman/twitter-ticker" target="_blank">Code</a>
+                                <br><p>(API version)</p>
+                            </div>
+                            <div>
+                                <a href="https://maggie-wiseman-portfolio.herokuapp.com/ticker/" target="_blank">Live </a>
+                                <br><p>(Non-API version)</p>
+                            </div>
                         </div>
                     </div>
                     <div class="project">
@@ -267,9 +272,9 @@
                     </div>
                 </div> <!-- end grid -->
 
-                <header class="projects-header" id="web">
-                    <h2>Web Design Projects</h2>
-                </header>
+            <header class="projects-header" id="web">
+                <h2>Web Design Projects</h2>
+            </header>
                 <div class="projects-row">
                     <div class="project">
                         <header class="project-title">
@@ -301,7 +306,7 @@
                             <h4>My Portfolio</h4>
                         </header>
                         <figure class="thumbnail">
-                            <a href="https://mwiseman.com" target="_blank"><img src="./images/screenshots/music.png" alt="Eat Portfolio screenshot" /></a>
+                            <a href="https://mwiseman.com" target="_blank"><img src="./images/screenshots/mobileSite.png" alt="My Portfolio screenshot" /></a>
                         </figure>
                         <p>I designed this site to show off my portfolio of projects. Includes Photoshop mock-up. Logo created with Adobe Illustrator. </p>
                         <div class="dl-btn-grp">
