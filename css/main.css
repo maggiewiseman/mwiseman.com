@@ -253,7 +253,6 @@ aside > ul > ul {
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     margin: 0 5px;
-
 }
 
 .btn-group a i {
@@ -280,7 +279,28 @@ aside > ul > ul {
     font-family: 'Josefin Sans', sans-serif;
     color: #fdb8f8;
     text-align: left;
-    font-size:
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+.skills-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.list-div ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#download-cv {
+    display: none;
 }
 
 
