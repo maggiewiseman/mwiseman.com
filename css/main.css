@@ -111,6 +111,7 @@ body {
     color: #595a5b;
     background-color: #004a80;
     text-align: center;
+    font-family: 'Josefin Slab', serif;
 }
 
 a {
@@ -119,6 +120,7 @@ a {
 
 section {
     width: 95%;
+    margin: 0 auto;
 }
 
 
@@ -129,19 +131,46 @@ nav {
     color: #004a80;
     background-color: #fff;
     text-align: left; r
+}
 
+#menu-icon {
+    padding: 15px;
+    display: inline;
+}
 
+#menu-icon i {
+    margin-top: 11px;
+    font-size: 24px;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    background: #ffffff;
+    height: 100%;
+    border-right: 1px solid #acacac;
+    display: none;
+}
+
+#hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    left: 85%;
+    font-size: 24px;
+    color: #acacac;
+    z-index: 100;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding:0;
-    display: inline;
+    font-size: 25px
 }
 
 nav ul li {
-    display: inline;
     position: relative;
     padding: 0px 10px;
 }
@@ -150,37 +179,28 @@ nav li a {
     color: #004a80;
     text-decoration: none;
     font-size: 24px;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-nav ul li:hover {
-    background: #acacac;
+ul li:hover {
+    background: #fdb8f8;
 }
 
-nav ul ul {
-    display: none;
+aside > ul > ul {
+    margin-left: 40px;
 }
 
-nav ul li:hover ul {
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 100%;
-    background: #fff;
-}
-
-nav ul ul li {
-    display: block
-}
 
 #dl-link {
     color: #acacac;
     float: right;
     border: 2px solid  #acacac;
     margin: 4px 8px;
-    padding: 4px;
+    padding: 5px 4px 0 4px;
     text-decoration: none;
     font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 #dl-link > i {
     padding-right: 10px;
@@ -188,7 +208,7 @@ nav ul ul li {
 
 /* ========== HERO =========== */
 .name {
-    width: 500px;
+    width: 300px;
     height: auto;
     display: inline-block;
 }
@@ -198,7 +218,7 @@ nav ul ul li {
     height: 100%;
 }
 
-.hero h1 {
+/*.hero h1 {
     display: inline-block;
     font-family: 'Clicker Script', cursive;
     color: #fdb8f8;
@@ -212,7 +232,7 @@ nav ul ul li {
     text-align: center;
     font-weight: 300;
     font-size: 48px;
-}
+}*/
 
 .hero p {
     display: none;
@@ -220,6 +240,7 @@ nav ul ul li {
 }
 
 .btn-group {
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -235,7 +256,7 @@ nav ul ul li {
 }
 
 .btn-group a i {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .social {
@@ -247,6 +268,19 @@ nav ul ul li {
     color: #fdb8f8;
 }
 
+/* ================= SKILLS ============== */
+#skills,
+#projects {
+    background: #fff;
+    border: 1px solid #595a5b;
+}
+
+#skills h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fdb8f8;
+    text-align: left;
+    font-size:
+}
 
 
 
@@ -334,8 +368,69 @@ nav ul ul li {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 550px) {
+
+    #menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding:0;
+        display: inline;
+        font-size: 40px
+    }
+
+    nav ul li {
+        position: relative;
+        padding: 0px 10px;
+        display: inline;
+    }
+
+    nav li a {
+        color: #004a80;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    nav ul li:hover {
+        background: #fdb8f8;
+    }
+
+    nav ul ul {
+        display: none;
+    }
+
+    nav ul li:hover ul {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 100%;
+        background: #fff;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 200px;
+    }
+
+
+    #dl-link {
+        color: #acacac;
+        float: right;
+        border: 2px solid  #acacac;
+        margin: 15px 8px 4px 8px;
+        padding: 5px 4px 0 4px;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    #dl-link > i {
+        padding-right: 10px;
+    }
 }
 
 @media print,
