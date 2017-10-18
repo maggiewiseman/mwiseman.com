@@ -272,14 +272,12 @@ img {
 #skills,
 #projects {
     background: #fff;
-    border: 1px solid #595a5b;
-    margin-bottom: 20px;
 }
 
 .projects-header,
 .skills-header {
     border-bottom: 2px solid #004a80;
-    border-top: 2px solid #004a80;
+    border-top: 8px solid #004a80;
 }
 
 header h2 {
@@ -323,7 +321,8 @@ header h4 {
 
 }
 
-div.projects-row > div:last-child {
+div.projects-row > div:last-child,
+div.projects-grid > div:last-child {
     border-bottom: none;
 }
 .project figure {
@@ -331,6 +330,7 @@ div.projects-row > div:last-child {
     height: auto;
     border: 1px #acacac solid;
     padding: 4px;
+    margin: 0 auto;
 }
 
 .project p {
@@ -343,14 +343,15 @@ div.projects-row > div:last-child {
 
 }
 .dl-btn-grp a {
-    border: 2px solid transparent;
+    border: 2px transparent;
     padding: 8px;
-    background: #fdb8f8;
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     margin: 0 5px;
+    background-image: linear-gradient(-180deg, #fdb8f8 0%, #fc9cf6 90%);
+    border-radius: 2px;
 }
 
 .dl-btn-grp div {
