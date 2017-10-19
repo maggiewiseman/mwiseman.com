@@ -112,6 +112,7 @@ body {
     background-color: #004a80;
     text-align: center;
     font-family: 'Josefin Slab', serif;
+    font-size: 20px;
 }
 
 a {
@@ -136,11 +137,13 @@ nav {
 #menu-icon {
     padding: 15px;
     display: inline;
+
 }
 
 #menu-icon i {
     margin-top: 11px;
     font-size: 24px;
+    cursor: pointer;
 }
 
 aside {
@@ -152,6 +155,10 @@ aside {
     height: 100%;
     border-right: 1px solid #acacac;
     display: none;
+}
+
+aside.open {
+    display: block;
 }
 
 #hide-menu-btn {
@@ -286,6 +293,7 @@ header h2 {
     text-align: left;
     font-size: 30px;
     padding: 10px;
+    margin: 5px;
 }
 
 .skills-div {
@@ -333,9 +341,11 @@ div.projects-grid > div:last-child {
     margin: 0 auto;
 }
 
-.project p {
-    margin: 15px;
+.project > p {
+    margin: 50px;
     text-align: left;
+    max-height: 150px;
+    overflow: scroll;
 }
 
 .dl-btn-grp {
