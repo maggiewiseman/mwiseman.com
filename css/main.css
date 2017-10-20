@@ -187,9 +187,10 @@ nav li a {
     text-decoration: none;
     font-size: 24px;
     font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
 }
 
-ul li:hover {
+nav a:hover {
     background: #fdb8f8;
 }
 
@@ -225,22 +226,6 @@ img {
     width: 100%;
     height: 100%;
 }
-
-/*.hero h1 {
-    display: inline-block;
-    font-family: 'Clicker Script', cursive;
-    color: #fdb8f8;
-    font-size: 75px;
-
-}
-
-.hero h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    font-size: 48px;
-}*/
 
 .hero p {
     display: none;
@@ -454,36 +439,66 @@ div.projects-grid > div:last-child {
    ========================================================================== */
 
 @media only screen and (min-width: 550px) {
+    body {
+        color: #595a5b;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    #blue-triangle {
+        width: 0;
+        height: 1000vh;
+        position: absolute;
+        border-right: 100vw solid transparent;
+        border-top: 100vh solid  #004a80;
+        z-index: -1;
+    }
+
+    /* ========== NAV =========== */
 
     #menu-icon {
         display: none;
     }
 
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding:0;
+    nav {
+        height: 0px;
+
+    }
+
+    aside {
+        position: relative;
         display: inline;
-        font-size: 40px
+        height: 75px;
+        margin-left: 65%;
+        width: auto;
+        background: transparent;
+    }
+
+    #hide-menu-btn {
+        display: none;
+
+    }
+
+    nav ul {
+        padding:0 20px 0 0;
+        display: inline;
+        font-size: 30px
     }
 
     nav ul li {
-        position: relative;
-        padding: 0px 10px;
         display: inline;
     }
 
     nav li a {
-        color: #004a80;
-        text-decoration: none;
-        font-size: 24px;
-        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
     }
 
-    nav ul li:hover {
-        background: #fdb8f8;
+    nav a:hover {
+        background: transparent;
+        color: #fdb8f8;
     }
-
     nav ul ul {
         display: none;
     }
@@ -501,21 +516,21 @@ div.projects-grid > div:last-child {
         width: 200px;
     }
 
+    nav ul ul li a {
+        color: #004a80;
+    }
 
     #dl-link {
-        color: #acacac;
-        float: right;
-        border: 2px solid  #acacac;
-        margin: 15px 8px 4px 8px;
-        padding: 5px 4px 0 4px;
-        text-decoration: none;
-        font-size: 24px;
-        font-family: 'Josefin Sans', sans-serif;
+        display: none;
+    }
 
+    /* ========== HERO =========== */
+
+    .hero header {
+        width: 500px;
     }
-    #dl-link > i {
-        padding-right: 10px;
-    }
+
+
 }
 
 @media print,
