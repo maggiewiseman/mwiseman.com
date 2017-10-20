@@ -327,7 +327,7 @@ div.projects-grid > div:last-child {
     margin: 0 auto;
 }
 
-.project > p {
+.caption > p {
     margin: 50px;
     text-align: left;
     max-height: 150px;
@@ -611,14 +611,24 @@ div.projects-grid > div:last-child {
         height: 70px;
     }
 
-    .project > p {
+    header h4 {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 80%;
+    }
+
+    .caption {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .caption > p {
         position: relative;
         margin: 20px;
         overflow: hidden;
-
     }
 
-    .projet > p:after {
+    .caption > p:after {
       content: "";
       text-align: right;
       position: absolute;
@@ -629,9 +639,17 @@ div.projects-grid > div:last-child {
       background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
     }
 
-    header h4 {
-        margin: 40px 0 0 0;
+    .tooltip {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: #004a80;
+        color: #fff;
+        padding: 10px;
+        overflow:visible;
+        float: left;
     }
+
 
 
 

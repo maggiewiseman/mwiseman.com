@@ -20,7 +20,9 @@
     var hideMenuBtn = document.getElementById('hide-menu-btn');
     var aside = document.getElementsByTagName('aside')[0];
     var list = document.getElementById('#nav-list');
-    console.log(list);
+    var captions = document.getElementsByClassName('caption');
+    console.log(captions);
+
 
     showMenuBtn.addEventListener('click', function(e) {
         console.log("clicked!", e.target);
@@ -35,4 +37,27 @@
     list.addEventListener('click', function(e) {
         aside.classList.remove('open');
     });
+
+    for(var i = 0; i < captions.length; i++) {
+        captions[i].addEventListener('mouseenter', function(e) {
+            console.log('hovering!', e);
+            console.log('e.target: ', e.srcElement);
+            if(e.target.classList[0] == 'caption') {
+                var info = e.target.childNodes[0].innerHTML;
+                console.log('info!!', info);
+                var newDiv = document.createElement('div');
+                newDiv.classList.add('tooltip');
+                newDiv.innerHTML = info;
+                console.log(this);
+                this.appendChild(newDiv);
+            }
+        });
+
+        captions[i].addEventListener('mouseleave', function(e) {
+            console.log('leaving', e);
+            this.removeChild(this.childNodes[1]);
+        });
+    }
+
+
 }());
