@@ -527,7 +527,23 @@ div.projects-grid > div:last-child {
     /* ========== HERO =========== */
 
     .hero header {
-        width: 500px;
+        width: 50%;
+    }
+
+    .hero p {
+        display: block;
+        font-size: 30px;
+        width: 60%;
+    }
+
+    .btn-group {
+        width: 35%;
+        display: inline-block;
+    }
+
+    .social {
+        width: 30%;
+        text-align: center;
     }
 
 
