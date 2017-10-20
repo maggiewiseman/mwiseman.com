@@ -46,58 +46,62 @@
             </aside>
             <a id="dl-link" href="./doc/Marguerite_Wiseman_Resume.pdf"><i class="fa fa-download"></i>  CV</a>
         </nav>
-        <section class="hero">
-            <header>
-                    <img src="./images/maggie-wiseman.png" alt="pink flask with bubbles" />
-            </header>
-            <p>with a passion for building incredibly effictive user interfaces that have a positive impact on people's lives.</p>
-            <div class="btn-group">
-                <a id="contact" href="mailto:marguerite.wiseman@apsva.us" class="btn">Contact Me</a>
-                <a id="download-cv-mobile" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
-            </div>
-            <div class="social">
-                <a href="https://github.com/maggiewiseman" class="social-icon"><i class="fa fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/margueritewiseman/" class="social-icon"><i class="fa fa-linkedin-square"></i></a>
-                <a href="https://twitter.com/oomaggie" class="social-icon"><i class="fa fa-twitter-square"></i></a>
-            </div>
-        </section>
-        <section id="skills">
-            <header class="skills-header">
-                <h2>Skills</h2>
-            </header>
-            <div class="skills-div">
-                <div class="list-div">
-                    <ul>
-                        <li>HTML5</li>
-                        <li>Bootstrap</li>
-                        <li>CSS & SCSS</li>
-                    </ul>
-                    <ul>
-                        <li>Illustrator</li>
-                        <li>Photoshop</li>
-                    </ul>
-                    <ul>
-                        <li>Git & Github</li>
-                    </ul>
+        <div id="top-half">
+            <section id="hero">
+                <header>
+                        <img src="./images/maggie-wiseman.png" alt="pink flask with bubbles" />
+                </header>
+                <p>with a passion for building amazing user interfaces that make a positive impact on people's lives.</p>
 
+                <div class="btn-group">
+                    <a id="contact" href="mailto:marguerite.wiseman@apsva.us" class="btn">Contact Me</a>
+                    <a id="download-cv-mobile" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
                 </div>
-                <div class="list-div">
+                <div class="social">
+                    <a href="https://github.com/maggiewiseman" class="social-icon"><i class="fa fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/margueritewiseman/" class="social-icon"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://twitter.com/oomaggie" class="social-icon"><i class="fa fa-twitter-square"></i></a>
+                </div>
+            </section>
+            <section id="skills">
+                <header class="skills-header">
+                    <h2>Skills</h2>
+                </header>
+                <div class="skills-div">
+                    <div class="list-div">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>Bootstrap</li>
+                            <li>CSS & SCSS</li>
+                        </ul>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Photoshop</li>
+                        </ul>
+                        <ul>
+                            <li>Git & Github</li>
+                        </ul>
 
-                    <ul>
-                        <li>jQuery</li>
-                        <li>Javascript</li>
-                        <li>Templating</li>
-                        <li>React & Redux</li>
-                        <li>Node & Express</li>
-                        <li>Mocha & Chai</li>
-                        <li>PosgreSQL</li>
-                        <li>Redis</li>
-                    </ul>
+                    </div>
+                    <div class="list-div">
+
+                        <ul>
+                            <li>jQuery</li>
+                            <li>Javascript</li>
+                            <li>Templating</li>
+                            <li>React & Redux</li>
+                            <li>Node & Express</li>
+                            <li>Mocha & Chai</li>
+                            <li>PosgreSQL</li>
+                            <li>Redis</li>
+                        </ul>
+                    </div>
+                    <a id="download-cv" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
                 </div>
-                <a id="download-cv" href="./doc/Marguerite_Wiseman_Resume.pdf" class="btn"><i class="fa fa-download"></i>Resume</a>
-            </div>
-        </section>
-        <section id="projects">
+            </section>
+        </div>
+        <div id="bottom-half">
+            <section id="projects">
             <header class="projects-header" id="full">
                 <h2>Fullstack Projects</h2>
             </header>
@@ -109,7 +113,7 @@
                     <figure class="thumbnail">
                         <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank"><img src="./images/screenshots/cloudnb.png" alt="lab notebook screenshot" /></a>
                     </figure>
-                    <p>Prototype for an application that allows high school teachers to manage student lab work with React and Redux on Node with PostgreSQL. </p>
+                    <div class="caption"><p>Prototype for an application that allows high school teachers to manage student lab work with React and Redux on Node with PostgreSQL. </div></p>
                     <div class="dl-btn-grp">
                         <a href="https://github.com/maggiewiseman/labNotebook/blob/master/readme.md" target="_blank">Code</a>
                         <a href="https://cloudnotebook.herokuapp.com/" target="_blank">Live</a>
@@ -122,7 +126,7 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/socialnetwork/blob/master/README.md" target="_blank"><img src="./images/screenshots/dogBookReg.png" alt="DogBook screenshot" /></a>
                         </figure>
-                        <p>A social networking site, with unit tests, that allows users to find and make friends and chat with other online users. Built with React, Redux, on Node with PostgreSQL and AWS S3</p>
+                        <div class="caption"><p>A social networking site, with unit tests, that allows users to find and make friends and chat with other online users. Built with React, Redux, on Node with PostgreSQL and AWS S3</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/socialnetwork/blob/master/README.md" target="_blank">Code</a>
                             <!--a href="https://eat-local-pledge.herokuapp.com/" target="_blank">Live</a -->
@@ -135,7 +139,7 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/petition/blob/master/README.md" target="_blank"><img src="./images/screenshots/petition.png" alt="Eat Locak Pledge screenshot" /></a>
                         </figure>
-                        <p>A website made to collection signatures for a pledge or petition. Multi-page, mobile friendly app using the HTML5 Canvas element and Javascript to collection signatures. Backend is an Express server on Node.js with a PosgreSQL database. I used Handlebars for templating & Redis for caching and storing session data.</p>
+                        <div class="caption"><p>A website made to collection signatures for a pledge or petition. Multi-page, mobile friendly app using the HTML5 Canvas element and Javascript to collection signatures. Backend is an Express server on Node.js with a PosgreSQL database. I used Handlebars for templating & Redis for caching and storing session data.</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/petition/blob/master/README.md" target="_blank">Code</a>
                             <a href="https://eat-local-pledge.herokuapp.com/" target="_blank">Live</a>
@@ -154,7 +158,7 @@
                         <figure class="thumbnail">
                             <a href="" target="_blank"><img src="./images/screenshots/piasoft.png" alt="PiaSoft Flowlogs Viewer screenshot" /></a>
                         </figure>
-                        <p>This app is made for Amazon Web Services customers who need a better way to view and sort logstreams data. I styled this Ruby on Rails app with Bootstrap and added key functionality via Javascript and jQuery on top of the Datatables.js library. I also created a custom logo using Adobe Illustrator.</p>
+                        <div class="caption"><p>This app is made for Amazon Web Services customers who need a better way to view and sort logstreams data. I styled this Ruby on Rails app with Bootstrap and added key functionality via Javascript and jQuery on top of the Datatables.js library. I also created a custom logo using Adobe Illustrator.</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://www.piasoftware.net/" target="_blank">Live</a>
                         </div>
@@ -167,7 +171,7 @@
                         <figure class="thumbnail">
                             <a href="http://mwiseman.com/projects/connect4/" target="_blank"><img src="./images/screenshots/connect4.png" alt="connect 4 screenshot" /></a>
                         </figure>
-                        <p>Connect 4 Game. I used the MVC concept to structure this app.  Includes fun CSS animations. (not mobile friendly) </p>
+                        <div class="caption"><p>Connect 4 Game. I used the MVC concept to structure this app.  Includes fun CSS animations. (not mobile friendly) </div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/petition/blob/master/README.md" target="_blank">Code</a>
                             <a href="https://maggie-wiseman-portfolio.herokuapp.com/connect4/" target="_blank">Live</a>
@@ -180,7 +184,7 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/spotify" target="_blank"><img src="./images/screenshots/spotify.png" alt="Spotify Screenshot" /></a>
                         </figure>
-                        <p>Uses incremental search and the Spotify API to list albums by artist</p>
+                        <div class="caption"><p>Uses incremental search and the Spotify API to list albums by artist</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/spotify" target="_blank">Code</a>
                             <a href="https://maggie-wiseman-portfolio.herokuapp.com/spotify/" target="_blank">Live</a>
@@ -193,7 +197,8 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/github" target="_blank"><img src="./images/screenshots/github.png" alt="DogBook screenshot" /></a>
                         </figure>
-                        <p>Uses the Github API which requires user authentication to search for repos by username.</p>
+
+                        <div class="caption"><p>Uses the Github API which requires user authentication to search for repos by username.</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/github" target="_blank">Code</a>
                             <a href="https://maggie-wiseman-portfolio.herokuapp.com/github/" target="_blank">Live</a>
@@ -206,7 +211,7 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/portfolio-express/tree/master/projects/resizablePanes" target="_blank"><img src="./images/screenshots/resizable-panes.png" alt="Resizable panes screenshot" /></a>
                         </figure>
-                        <p>Drag the slider to see the parthenon change from old to new!</p>
+                        <div class="caption"><p>Drag the slider to see the parthenon change from old to new!</p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/portfolio-express/tree/master/projects/resizablePanes" target="_blank">Code</a>
                             <a href="https://maggie-wiseman-portfolio.herokuapp.com/resizablePanes/" target="_blank">Live</a>
@@ -219,11 +224,11 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/twitter-ticker" target="_blank"><img src="./images/screenshots/ticker.png" alt="Scrolling-ticker" /></a>
                         </figure>
-                        <p>The goal here was to take a list of anchor tags in an html file and make them scroll across the top of the screen using only vanilla JavaScript. The second part of this project required getting the headlines from the Twitter API.</p>
+                        <div class="caption"><p>The goal here was to take a list of anchor tags in an html file and make them scroll across the top of the screen using only vanilla JavaScript. The second part of this project required getting the headlines from the Twitter API.</div></p>
                         <div class="dl-btn-grp">
                             <div>
                                 <a href="https://github.com/maggiewiseman/twitter-ticker" target="_blank">Code</a>
-                                <br><p>(API version)</p>
+                                <br>(API version)</p>
                             </div>
                             <div>
                                 <a href="https://maggie-wiseman-portfolio.herokuapp.com/ticker/" target="_blank">Live </a>
@@ -238,7 +243,7 @@
                         <figure class="thumbnail">
                             <a href="" target="_blank"><img src="./images/screenshots/chuckNorris.png" alt="chuck norris quote screenshot" /></a>
                         </figure>
-                        <p>A random Chuck Norris quote generator. Gets quotes from an API.  Allows users to share quotes with Twitter. </p>
+                        <div class="caption"><p>A random Chuck Norris quote generator. Gets quotes from an API.  Allows users to share quotes with Twitter. </div></p>
                         <div class="dl-btn-grp">
                             <a href="" target="_blank">Code</a>
                             <a href="https://mwiseman.com/projects/quote/" target="_blank">Live</a>
@@ -251,7 +256,7 @@
                         <figure class="thumbnail">
                             <a href="http://http://mwiseman.com/projects/todo/" target="_blank"><img src="./images/screenshots/todo.png" alt="To Do List App" /></a>
                         </figure>
-                        <p>This app is modeled after the To Do MVC apps, but built from scratch and restyled.</p>
+                        <div class="caption"><p>This app is modeled after the To Do MVC apps, but built from scratch and restyled.</p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/watchandcode" target="_blank">Code</a>
                             <a href="http://http://mwiseman.com/projects/todo/" target="_blank">Live </a>
@@ -264,7 +269,7 @@
                         <figure class="thumbnail">
                             <a href="https://github.com/maggiewiseman/magic" target="_blank"><img src="./images/screenshots/magic.png" alt="Magic 8 Ball App" /></a>
                         </figure>
-                        <p>The goal here was to take make a Magic 8 Ball app that responds to shaking on mobile devices.</p>
+                        <div class="caption"><p>The goal here was to take make a Magic 8 Ball app that responds to shaking on mobile devices.</div></p>
                         <div class="dl-btn-grp">
                             <a href="https://github.com/maggiewiseman/magic" target="_blank">Code</a>
                             <a href="http://mwiseman.com/projects/magic/" target="_blank">Live </a>
@@ -283,7 +288,7 @@
                         <figure class="thumbnail">
                             <a href="./doc/otc-style-guide.pdf" target="_blank"><img src="./images/screenshots/otc-coffee.png" alt="Old Town Coffee screenshot" /></a>
                         </figure>
-                        <p>Brand development for a local coffeeshop.  Includes icons, logo, Photoshop mock-up, and style guide. </p>
+                        <div class="caption"><p>Brand development for a local coffeeshop.  Includes icons, logo, Photoshop mock-up, and style guide. </div></p>
                         <div class="dl-btn-grp">
                             <a href="./doc/otc-landing-page.psd" target="_blank">PSD</a>
                             <a href="https://codepen.io/oomaggie/full/rwJygR/" target="_blank">Live</a>
@@ -296,7 +301,7 @@
                         <figure class="thumbnail">
                             <a href="http://mwiseman.com/projects/music-site/" target="_blank"><img src="./images/screenshots/music.png" alt="Music blog screenshot" /></a>
                         </figure>
-                        <p>Fully responsive site for a music blog. No CSS framework used.</p>
+                        <div class="caption"><p>Fully responsive site for a music blog. No CSS framework used.</p>
                         <div class="dl-btn-grp">
                             <a href="http://mwiseman.com/projects/music-site/" target="_blank">Live</a>
                         </div>
@@ -308,13 +313,14 @@
                         <figure class="thumbnail">
                             <a href="https://mwiseman.com" target="_blank"><img src="./images/screenshots/mobileSite.png" alt="My Portfolio screenshot" /></a>
                         </figure>
-                        <p>I designed this site to show off my portfolio of projects. Includes Photoshop mock-up. Logo created with Adobe Illustrator. </p>
+                        <div class="caption"><p>I designed this site to show off my portfolio of projects. Includes Photoshop mock-up. Logo created with Adobe Illustrator. </div></p>
                         <div class="dl-btn-grp">
                             <a href="#" target="_blank">PSD</a>
                         </div>
                     </div>
                 </div> <!-- end row -->
             </section>
+        </div>
         <footer>
         </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
